@@ -42,7 +42,15 @@ function App() {
           }
         }
 
-        // console.log(subArrayOfWords);
+        /* 
+        Ok, here is simplest way to do this shit
+
+        s.split(" ").reduce((a, c) => {
+              let k = c.toLowerCase();
+              return a.has(k) ? a.set(k, a.get(k) +1) : a.set(k, 1);
+        }, new Map());
+
+         */
       }
       setResultArray(resultArray);
     }
