@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import seed from '../seed';
+import '../styles/inputBar.css';
 
 export default function Input(props) {
   const [state, setState] = useState('');
@@ -26,13 +27,13 @@ export default function Input(props) {
   return (
     <div className="input-form">
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
           type="text"
-          placeholder="Enter Word Here"
+          placeholder="Your String"
           onChange={handleChange}
           value={state}
-        />
-        <div>
+        ></textarea>
+        <div className="buttons">
           <button type="button" onClick={LoadSampleData}>
             Sample Data
           </button>
