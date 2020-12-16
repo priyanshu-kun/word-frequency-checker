@@ -1,3 +1,7 @@
+# Project Preview
+
+![project img](https://raw.githubusercontent.com/priyanshuSharma-WebDev/word-frequency-checker/master/src/wordFreq.jpg)
+
 # New Project
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
