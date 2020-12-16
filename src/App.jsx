@@ -45,10 +45,15 @@ function App() {
         /* 
         Ok, here is simplest way to do this shit
 
-        s.split(" ").reduce((a, c) => {
-              let k = c.toLowerCase();
-              return a.has(k) ? a.set(k, a.get(k) +1) : a.set(k, 1);
-        }, new Map());
+        const occurrences = words.reduce((accumulator, word) => {
+
+          ***Here we reduce whole array into an object and check if word related key is already had or not if had then increment else mean It's new then assign 1 to it***
+
+          accumulator[word] ? accumulator[word]++ : (accumulator[word] = 1);
+          return accumulator;
+
+
+        }, {});
 
          */
       }
